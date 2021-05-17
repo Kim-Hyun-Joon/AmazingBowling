@@ -205,6 +205,12 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 9011478745676441628, guid: b9bda67241fc6d84abd04329f0c27692,
+        type: 3}
+      propertyPath: OutputAudioMixerGroup
+      value: 
+      objectReference: {fileID: -6911675435501780112, guid: c66d2b8471681a54eb9bbc2df9a0ff8f,
+        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b9bda67241fc6d84abd04329f0c27692, type: 3}
 --- !u!4 &7597442175428565412 stripped
