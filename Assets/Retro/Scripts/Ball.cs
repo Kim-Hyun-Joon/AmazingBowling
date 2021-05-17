@@ -20,6 +20,10 @@ public class Ball : MonoBehaviour
         Destroy(gameObject, lifeTime);
     }
 
+    private void OnDestroy() {
+        GameManager.instance.OnBallDestroy();
+    }
+
     private void OnTriggerEnter(Collider other) {
         Collider[] colliders = Physics.OverlapSphere(transform.position, explosionRadius, whatIsProp);
 
@@ -39,8 +43,6 @@ public class Ball : MonoBehaviour
 
         explosionParticle.Play();
         explosionAudio.Play();
-
-        GameManager.instance.OnBallDestroy();
 
         Destroy(explosionParticle.gameObject, explosionParticle.duration);
         Destroy(gameObject);
